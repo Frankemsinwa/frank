@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import { Terminal } from './components/Terminal';
+import { WelcomeScreen } from './components/WelcomeScreen';
+import { ParticlesCursor } from './components/ParticlesCursor';
+import { Toaster } from './components/ui/sonner';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [showWelcome, setShowWelcome] = useState(true);
+  const [showParticles, setShowParticles] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if mobile device
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || 'ontouchstart' in window);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-[#0a0a0a] text-[#00ff41] font-mono overflow-hidden">
+      {showWelcome ? <WelcomeScreen /> : <Terminal />}
+      {/* Only show particle cursor on desktop */}
+      {showParticles && !isMobile && <ParticlesCursor />}
+      <Toaster />
+    </div>
+  );
 }
-
-export default App
