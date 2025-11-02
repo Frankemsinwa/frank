@@ -19,22 +19,22 @@ const contactMethods = [
   {
     icon: Github,
     label: 'GitHub',
-    value: '@frankemesinwa',
-    action: 'https://github.com/frankemesinwa',
+    value: '@frankemsinwa',
+    action: 'https://github.com/Frankemsinwa',
     color: '#ffffff',
   },
   {
     icon: Twitter,
     label: 'Twitter',
-    value: '@frankemesinwa',
-    action: 'https://twitter.com/frankemesinwa',
+    value: '@black_fusion',
+    action: 'https://x.com/black_fusion_',
     color: '#1da1f2',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    action: 'tel:+15551234567',
+    value: '+234 706-4890-703',
+    action: 'tel:+2347064890703',
     color: '#00ff41',
   },
   {
