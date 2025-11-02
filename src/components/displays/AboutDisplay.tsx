@@ -38,7 +38,7 @@ export function AboutDisplay() {
           <div className="flex items-start gap-3">
             <MapPin size={16} className="mt-1 flex-shrink-0" />
             <p>
-              Based in [Your Location] • Available for remote opportunities
+              Based in Abuja,Nigeria• Available for remote opportunities
               worldwide
             </p>
           </div>
