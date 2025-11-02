@@ -5,15 +5,15 @@ const contactMethods = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'frank.emesinwa@example.com',
-    action: 'mailto:frank.emesinwa@example.com',
+    value: 'frankemesinwa@gmail.com',
+    action: 'mailto:frankemesinwa@gmail.com',
     color: '#00d9ff',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
     value: '/in/frank-emesinwa',
-    action: 'https://linkedin.com/in/frank-emesinwa',
+    action: 'https://www.linkedin.com/in/frank-emesinwa-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
     color: '#0077b5',
   },
   {
