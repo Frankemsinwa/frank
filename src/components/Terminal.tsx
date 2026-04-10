@@ -21,7 +21,7 @@ export function Terminal() {
     {
       id: '0',
       type: 'output',
-      content: '🚀 Welcome to Frank Emesinwa\'s Portfolio Terminal',
+      content: '🚀 Welcome onboard',
       timestamp: new Date(),
     },
     {
