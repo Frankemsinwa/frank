@@ -21,7 +21,7 @@ export function Terminal() {
     {
       id: '0',
       type: 'output',
-      content: '🚀 Welcome onboard',
+      content: '🚀 Welcome on board buddy',
       timestamp: new Date(),
     },
     {
