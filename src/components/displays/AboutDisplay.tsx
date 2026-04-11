@@ -53,6 +53,7 @@ export function AboutDisplay() {
                 <li>• Web Development (Next.js, React)</li>
                 <li>• Backend Engineering (Node.js, Express)</li>
                 <li>• Database Design (PostgreSQL, Prisma)</li>
+                <li>• UI/UX Design (Figma)</li>
               </ul>
             </div>
 
