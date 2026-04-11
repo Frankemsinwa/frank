@@ -51,6 +51,7 @@ export function AboutDisplay() {
               <ul className="space-y-1 text-xs opacity-80">
                 <li>• Mobile Development (React Native + Expo)</li>
                 <li>• Web Development (Next.js, React)</li>
+                <li>• AI Engineering (Vercel AI SDK, LLMs)</li>
                 <li>• Backend Engineering (Node.js, Express)</li>
                 <li>• Database Design (PostgreSQL, Prisma)</li>
                 <li>• UI/UX Design (Figma)</li>
