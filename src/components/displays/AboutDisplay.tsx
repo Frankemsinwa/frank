@@ -47,14 +47,15 @@ export function AboutDisplay() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <h3 className="text-[#00d9ff] mb-2">🎯 Specializations</h3>
+              <h3 className="text-[#00d9ff] mb-2">🚀 Advanced Tech Stack</h3>
               <ul className="space-y-1 text-xs opacity-80">
-                <li>• Mobile Development (React Native + Expo)</li>
-                <li>• Web Development (Next.js, React)</li>
-                <li>• AI Engineering (Vercel AI SDK, LLMs)</li>
-                <li>• Backend Engineering (Node.js, Express)</li>
-                <li>• Database Design (PostgreSQL, Prisma)</li>
-                <li>• UI/UX Design (Figma)</li>
+                <li>• Frontend: React, Next.js, TypeScript, TailwindCSS</li>
+                <li>• Mobile: React Native, Expo, Flutter</li>
+                <li>• Backend: Node.js, Go, Python, FastAPI</li>
+                <li>• AI/ML: OpenAI API, LangChain, Vercel AI SDK</li>
+                <li>• Database: PostgreSQL, MongoDB, Redis, Prisma</li>
+                <li>• DevSecOps: Docker, Kubernetes, AWS, CI/CD</li>
+                <li>• Tools: Git, Figma, Jira, Postman</li>
               </ul>
             </div>
 
@@ -63,7 +64,7 @@ export function AboutDisplay() {
               <p className="text-xs opacity-80">
                 I believe in writing clean, maintainable code that solves real
                 problems. Always learning, always building, always pushing the
-                boundaries of what's possible.
+                boundaries of what's possible with cutting-edge technology.
               </p>
             </div>
           </div>
