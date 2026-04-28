@@ -3,6 +3,7 @@ import { SkillsDisplay } from './displays/SkillsDisplay';
 import { ProjectsDisplay } from './displays/ProjectsDisplay';
 import { ContactDisplay } from './displays/ContactDisplay';
 import { ExperienceDisplay } from './displays/ExperienceDisplay';
+import { QuoteDisplay } from './displays/QuoteDisplay';
 
 export interface Command {
   name: string;
@@ -125,17 +126,8 @@ ${commandList.join('\n')}
 
   quote: {
     name: 'quote',
-    description: 'Get an inspirational quote',
-    execute: () => {
-      const quotes = [
-        '"Code is like humor. When you have to explain it, it\'s bad." - Cory House',
-        '"First, solve the problem. Then, write the code." - John Johnson',
-        '"Experience is the name everyone gives to their mistakes." - Oscar Wilde',
-        '"In order to be irreplaceable, one must always be different." - Coco Chanel',
-        '"The best way to predict the future is to invent it." - Alan Kay',
-      ];
-      return quotes[Math.floor(Math.random() * quotes.length)];
-    },
+    description: 'Request a project quote',
+    execute: () => <QuoteDisplay />,
   },
 
   matrix: {
